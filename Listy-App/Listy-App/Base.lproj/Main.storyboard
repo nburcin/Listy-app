@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="120" id="MFk-4h-4hI">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="parallaxCell" rowHeight="120" id="MFk-4h-4hI" customClass="ParallaxCell" customModule="Listy_App" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MFk-4h-4hI" id="gg1-cS-6lI">
@@ -46,6 +46,10 @@
                                         <constraint firstItem="b8G-Z4-brY" firstAttribute="top" secondItem="gg1-cS-6lI" secondAttribute="top" id="tbU-df-g9J"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="tQV-AI-SHq" id="2Ge-20-OXS"/>
+                                    <outlet property="itemImageLabel1" destination="b8G-Z4-brY" id="xuj-iF-bf1"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
