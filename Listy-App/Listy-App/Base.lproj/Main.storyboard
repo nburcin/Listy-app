@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--List TableVC-->
+        <scene sceneID="GXc-3c-AVr">
+            <objects>
+                <tableViewController id="u63-dA-uLY" customClass="ListTableVC" customModule="Listy_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="w0M-2e-f7f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="120" id="MFk-4h-4hI">
+                                <rect key="frame" x="0.0" y="28" width="414" height="120"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MFk-4h-4hI" id="gg1-cS-6lI">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="119.66666666666667"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="b8G-Z4-brY">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="119.66666666666667"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAMERAS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tQV-AI-SHq">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="119.66666666666667"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.25246147260273971" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-HeavyItalic" family="Avenir Next" pointSize="50"/>
+                                            <color key="textColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="b8G-Z4-brY" firstAttribute="leading" secondItem="gg1-cS-6lI" secondAttribute="leading" id="2BQ-DU-8mp"/>
+                                        <constraint firstItem="tQV-AI-SHq" firstAttribute="leading" secondItem="gg1-cS-6lI" secondAttribute="leading" id="FLr-mc-sjs"/>
+                                        <constraint firstAttribute="bottom" secondItem="tQV-AI-SHq" secondAttribute="bottom" id="Gy6-gf-Jlh"/>
+                                        <constraint firstAttribute="trailing" secondItem="tQV-AI-SHq" secondAttribute="trailing" id="KLl-bE-Yfh"/>
+                                        <constraint firstItem="tQV-AI-SHq" firstAttribute="top" secondItem="gg1-cS-6lI" secondAttribute="top" id="L47-0s-q5l"/>
+                                        <constraint firstAttribute="trailing" secondItem="b8G-Z4-brY" secondAttribute="trailing" id="dbC-tE-8BT"/>
+                                        <constraint firstAttribute="bottom" secondItem="b8G-Z4-brY" secondAttribute="bottom" id="nNg-co-EDn"/>
+                                        <constraint firstItem="b8G-Z4-brY" firstAttribute="top" secondItem="gg1-cS-6lI" secondAttribute="top" id="tbU-df-g9J"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="u63-dA-uLY" id="GFc-y8-yjW"/>
+                            <outlet property="delegate" destination="u63-dA-uLY" id="Rrj-1l-rZC"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2WL-SN-wWU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="157.59999999999999" y="136.28185907046478"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="12.052077293395996" height="8"/>
+    </resources>
+</document>
